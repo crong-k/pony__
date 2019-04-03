@@ -50,10 +50,10 @@ code {
   margin: 5px 15px !important;
   height: 250px !important;
   width: 250px !important;
-  border-left: 2px solid rgb(21, 61, 2) !important;
-  border-right: 2px solid rgb(21, 61, 2) !important;
-  border-top: 2px solid rgb(21, 61, 2) !important;
-  border-bottom: 2px solid rgb(21, 61, 2) !important;
+  border-left: 4px solid rgb(21, 61, 2) !important;
+  border-right: 4px solid rgb(21, 61, 2) !important;
+  border-top: 4px solid rgb(21, 61, 2) !important;
+  border-bottom: 4px solid rgb(21, 61, 2) !important;
   float : left;
 }
 
