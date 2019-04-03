@@ -7,12 +7,7 @@ import DrawChart from './components/DrawChart';
 class App extends Component {
   render() {
     return (
-      <div class="alert alert-primary">
-	    Click X to Close
-	    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-		  <span aria-hidden="true">&times;</span>
-	    </button>
-      </div>
+     NaN
     );
   }
 }
