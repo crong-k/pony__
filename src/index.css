@@ -16,17 +16,17 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 30px !important;
-  width: 30% !important;
+  margin-top: 30px;
+  width: 30%;
 }
 
 .topic {
   text-align: center;
   background-color: #042c5c;
   color: #ffffff;
-  font-family: "Arita Sans" !important;
-  padding-top: 15px !important;
-  padding-bottom: 15px !important;
+  font-family: "Arita Sans";
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 code {
