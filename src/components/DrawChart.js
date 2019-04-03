@@ -38,7 +38,7 @@ class DrawChart extends Component {
                         'rgba(206, 106, 136, 0.4)', //Target_Spot
                         'rgba(245, 188, 3, 0.4)', // YellowLeaf_Curl_Virus
                         'rgba(59, 139, 45, 0.4)', // //healthy
-                        'rgba(250, 17, 106, 0.4)' // mosaic_virus
+                        'rgba(62, 143, 132, 0.4)' // mosaic_virus
                     ]    ,                    
                     borderWidth: 1
                 }]
