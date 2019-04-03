@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { Button, Popover, PopoverHeader, PopoverBody } from 'reactstrap';
 
-class Button extends Component {   
+class InfoButton extends Component {   
     constructor(props) {
         super(props);
     
@@ -31,4 +31,4 @@ class Button extends Component {
         );
       }
     }
-export default Button;
+export default InfoButton;
