@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  margin: auto;
+}
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  width: 30%;
+}
+
+.topic {
+  text-align: center;
+  background-color: #042c5c;
+  color: #ffffff;
+  font-family: "Arita Sans";
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.imageInput {
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  padding: 13px;
+  margin: 15px;
+  cursor: pointer;
+}
+
+.imgPreview {
+  text-align: center;
+  margin: 5px 15px;
+  height: 250px;
+  width: 250px;
+  border-left: 2px solid rgb(21, 61, 2);
+  border-right: 2px solid rgb(21, 61, 2);
+  border-top: 2px solid rgb(21, 61, 2);
+  border-bottom: 2px solid rgb(21, 61, 2);
+}
+
+#input_img, #no_img {
+  text-align: center;
+  height: 256px;
+  width: 256px;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
