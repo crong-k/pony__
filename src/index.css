@@ -57,8 +57,9 @@ code {
 
 #input_img, #no_img {
   text-align: center;
-  height: 256px;
-  width: 256px;
+  height: 256px !important;
+  width: 256px !important;
+  box-sizing: content-box !important;
   border-left: 1px solid gray;
   border-right: 1px solid gray;
   border-top: 1px solid gray;
