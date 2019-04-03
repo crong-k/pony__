@@ -42,7 +42,7 @@ code {
   padding: 13px;
   margin: 15px;
   cursor: pointer;
-  margin-left: auto;
+  float : left;
 }
 
 .imgPreview {
@@ -54,7 +54,7 @@ code {
   border-right: 2px solid rgb(21, 61, 2) !important;
   border-top: 2px solid rgb(21, 61, 2) !important;
   border-bottom: 2px solid rgb(21, 61, 2) !important;
-  margin-right: auto;
+  float : right;
 }
 
 #input_img, #no_img {
