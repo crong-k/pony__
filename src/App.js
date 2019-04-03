@@ -4,10 +4,8 @@ import { Spinner } from 'reactstrap';
 
 class App extends Component {
   render() {
-    return (
-     
-      <Spinner type="grow" color="success" />
-     
+    return (     
+      <Spinner type="grow" color="success" />     
     );
   }
 }
