@@ -25,10 +25,10 @@ class DrawChart extends Component {
                     data: this.props.yFromParent ,              
                     backgroundColor: [
                         'rgba(0, 0, 0, 0.4)', //Bacterial
-                        'rgba(9, 158, 4, 0.6)', //healthy
+                        'rgba(59, 139, 45, 0.4)', //healthy
                         'rgba(114, 56, 1, 0.4)', //Early_blight
                         'rgba(66, 34, 4, 0.4)', //Late_blight
-                        'rgba(9, 158, 4, 0.6)',//healthy
+                        'rgba(59, 139, 45, 0.4)',//healthy
                         'rgba(0, 0, 0, 0.4)', //Bacterial
                         'rgba(26, 156, 216, 0.4)', //Early_blight
                         'rgba(66, 34, 4, 0.4)', //Late_blight
@@ -37,7 +37,7 @@ class DrawChart extends Component {
                         'rgba(115, 113, 129, 0.4)', // Spider_mites_Two_spotted_spider_mite
                         'rgba(206, 106, 136, 0.4)', //Target_Spot
                         'rgba(245, 188, 3, 0.4)', // YellowLeaf_Curl_Virus
-                        'rgba(9, 158, 4, 0.6)', // //healthy
+                        'rgba(59, 139, 45, 0.4)', // //healthy
                         'rgba(250, 17, 106, 0.4)' // mosaic_virus
                     ]    ,                    
                     borderWidth: 1
