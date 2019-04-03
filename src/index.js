@@ -4,7 +4,6 @@ import './index.css';
 import App from './App';
 import ImageUploader from './components/ImageUploader';
 import InfoButton from './components/InfoButton';
-import DrawChart from './components/DrawChart';
 import 'bootstrap/dist/css/bootstrap.css'
 import * as serviceWorker from './serviceWorker';
 
