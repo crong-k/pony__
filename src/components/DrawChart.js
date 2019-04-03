@@ -24,21 +24,21 @@ class DrawChart extends Component {
                     label: 'Plant Disease',
                     data: this.props.yFromParent ,              
                     backgroundColor: [
-                        'rgba(27, 26, 24, 0.6)', //Bacterial
-                        'rgba(39, 148, 66, 0.6)', //healthy
-                        'rgba(114, 56, 1, 0.6)', //Early_blight
-                        'rgba(66, 34, 4, 0.6)', //Late_blight
-                        'rgba(39, 148, 66, 0.6)',//healthy
-                        'rgba(27, 26, 24, 0.6)', //Bacterial
-                        'rgba(114, 56, 1, 0.6)', //Early_blight
-                        'rgba(66, 34, 4, 0.6)', //Late_blight
-                        'rgba(211, 190, 70, 0.6)', //Leaf_Mold
-                        'rgba(76, 62, 209, 0.6)', //Septoria_leaf_spot
-                        'rgba(115, 113, 129, 0.6)', // Spider_mites_Two_spotted_spider_mite
-                        'rgba(206, 106, 136, 0.6)', //Target_Spot
-                        'rgba(245, 188, 3, 0.6)', // YellowLeaf_Curl_Virus
-                        'rgba(39, 148, 66, 0.6)', // //healthy
-                        'rgba(59, 12, 26, 0.6)' // mosaic_virus
+                        'rgba(27, 26, 24, 0.4)', //Bacterial
+                        'rgba(39, 148, 66, 0.4)', //healthy
+                        'rgba(114, 56, 1, 0.4)', //Early_blight
+                        'rgba(66, 34, 4, 0.4)', //Late_blight
+                        'rgba(39, 148, 66, 0.4)',//healthy
+                        'rgba(27, 26, 24, 0.4)', //Bacterial
+                        'rgba(114, 56, 1, 0.4)', //Early_blight
+                        'rgba(66, 34, 4, 0.4)', //Late_blight
+                        'rgba(211, 190, 70, 0.4)', //Leaf_Mold
+                        'rgba(76, 62, 209, 0.4)', //Septoria_leaf_spot
+                        'rgba(115, 113, 129, 0.4)', // Spider_mites_Two_spotted_spider_mite
+                        'rgba(206, 106, 136, 0.4)', //Target_Spot
+                        'rgba(245, 188, 3, 0.4)', // YellowLeaf_Curl_Virus
+                        'rgba(39, 148, 66, 0.4)', // //healthy
+                        'rgba(59, 12, 26, 0.4)' // mosaic_virus
                     ]    ,                    
                     borderWidth: 1
                 }]
