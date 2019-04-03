@@ -6,10 +6,10 @@ import InfoButton from './components/InfoButton';
 class App extends Component {
   render() {
     return (
-      <div>
+      
       ReactDOM.render(<InfoButton />, document.getElementById('but'));
       ReactDOM.render(<ImageUploader />, document.getElementById('img'));
-      </div>
+      
     );
   }
 }
