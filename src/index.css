@@ -16,8 +16,8 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 30px !important;
-  width: 30% !important;
+  margin-top: 40px !important;
+  width: 40% !important;
 }
 
 .topic {
@@ -25,8 +25,8 @@ body {
   background-color: #042c5c;
   color: #ffffff;
   font-family: "Arita Sans";
-  padding-top: 15px !important;
-  padding-bottom: 15px !important;
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
 }
 
 code {
@@ -42,6 +42,7 @@ code {
   padding: 13px;
   margin: 15px;
   cursor: pointer;
+  margin-left: auto;
 }
 
 .imgPreview {
@@ -53,6 +54,7 @@ code {
   border-right: 2px solid rgb(21, 61, 2) !important;
   border-top: 2px solid rgb(21, 61, 2) !important;
   border-bottom: 2px solid rgb(21, 61, 2) !important;
+  margin-right: auto;
 }
 
 #input_img, #no_img {
