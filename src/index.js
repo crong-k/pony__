@@ -8,8 +8,8 @@ import 'bootstrap/dist/css/bootstrap.css'
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(<App />, document.getElementById('root'));
-ReactDOM.render(<InfoButton />, document.getElementById('but'));
-ReactDOM.render(<ImageUploader />, document.getElementById('img'));
+//ReactDOM.render(<InfoButton />, document.getElementById('but'));
+//ReactDOM.render(<ImageUploader />, document.getElementById('img'));
 
 // ReactDOM.render(<DrawChart />, document.getElementById('chart'));  //At index.html 
 
