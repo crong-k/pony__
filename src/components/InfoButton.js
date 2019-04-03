@@ -21,11 +21,11 @@ class InfoButton extends Component {
         return (
           <div>
             <Button id="Popover1" type="button">
-              Launch Popover
+              HELP!
             </Button>
             <Popover placement="bottom" isOpen={this.state.popoverOpen} target="Popover1" toggle={this.toggle}>
-              <PopoverHeader>Popover Title</PopoverHeader>
-              <PopoverBody>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</PopoverBody>
+              <PopoverHeader>info</PopoverHeader>
+              <PopoverBody>please upload image </PopoverBody>
             </Popover>
           </div>
         );
