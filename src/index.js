@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
 import ImageUploader from './components/ImageUploader';
 import InfoButton from './components/InfoButton';
 import 'bootstrap/dist/css/bootstrap.css'
+import './index.css';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(<App />, document.getElementById('root'));
