@@ -40,7 +40,6 @@ class ImageUploader extends Component {
 predictFromImage(imgData){
     console.log('check 3')
     const promise = tf.loadLayersModel('tea_model02/model.json');
-    let result;
     promise.then((gt_model) => {
         const catEl = imgData;
         const img = tf.browser.fromPixels(catEl).toFloat();
@@ -48,15 +47,9 @@ predictFromImage(imgData){
         const normalized = img.div(offset);
         const batched = normalized.reshape([1, 256, 256, 3]);   
         const gopred = gt_model.predict(batched);      
-
-        //const chdim=  gopred.squeeze();
         const y_pred = gopred.dataSync() ;  // strip of one_dimention
-        //result = y_pred_.replace('Tensor ', '')
-
         console.log('y_pred: ', y_pred);
         //const data = JSON.parse(result);
-        //console.log("json parse: ", data);
-
         this.setState({  
             predResult: y_pred
         });
@@ -85,7 +78,6 @@ predictFromImage(imgData){
                  this.getImageData();}}/>
             <div>
                 {$imagePreview}
-                {console.log('check 5 - render_return')}
                 {console.log("before_render: ",predResult)}
                 <DrawChart yFromParent={predResult}/>   
             </div>

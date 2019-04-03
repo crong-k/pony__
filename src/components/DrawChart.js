@@ -8,9 +8,6 @@ class DrawChart extends Component {
   
     render(){
         console.log("***", this.props.yFromParent);
-        //var {yFromParent} = this.props.yFromParent ;   
-
-
         return(
             <div className = 'chart'>
             <Polar 
