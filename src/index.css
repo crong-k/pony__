@@ -24,7 +24,7 @@ body {
   text-align: center;
   background-color: #042c5c;
   color: #ffffff;
-  font-family: "Arita Sans";
+  font-family: "Arita Sans" !important;
   padding-top: 20px !important;
   padding-bottom: 20px !important;
 }
