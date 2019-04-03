@@ -15,7 +15,7 @@ class InfoButton extends Component {
   render() {
     return (
       <div>
-        <Button color="warning" onClick={this.toggle} style={{ marginBottom: '1rem' }}>Toggle</Button>
+        <Button outline color="warning" size="lg" onClick={this.toggle} style={{ marginBottom: '1rem' }}>Toggle</Button>
         <Collapse isOpen={this.state.collapse}>
           <Card>
             <CardBody>
