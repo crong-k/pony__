@@ -4,9 +4,14 @@
   "private": true,
   "dependencies": {
     "@tensorflow/tfjs": "^1.0.2",
+    "chart.js": "^2.8.0",
     "react": "^16.8.6",
+    "react-addons-css-transition-group": "^15.6.2",
+    "react-addons-transition-group": "^15.6.2",
+    "react-chartjs-2": "^2.7.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "2.1.8"
+    "react-scripts": "2.1.8",
+    "reactstrap": "^8.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
