@@ -68,10 +68,7 @@ code {
   border-bottom: 1px solid gray;
 }
 
-* {
-  box-sizing: border-box;
-  float : right;
-}
+
 a {
   color: black;
   text-decoration: none;
