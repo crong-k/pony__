@@ -7,7 +7,7 @@ class DrawChart extends Component {
         }  
   
     render(){
-        console.log("***", this.props.yFromParent);
+        console.log("***DrawChart***", this.props.yFromParent);
        
 
         return(
