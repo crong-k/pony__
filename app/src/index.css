@@ -54,7 +54,7 @@ code {
   border-right: 4px solid rgb(21, 61, 2) !important;
   border-top: 4px solid rgb(21, 61, 2) !important;
   border-bottom: 4px solid rgb(21, 61, 2) !important;
-  float : left;
+  float : left;  
 }
 
 #input_img, #no_img {
@@ -81,7 +81,7 @@ a {
 	margin: 20px 0;
 	width: 212px;
   text-align: center;
-  float: right;
+  float: right;  
 }
 .datepicker-holder .prev {
   float: left;
