@@ -8,7 +8,15 @@ class DrawChart extends Component {
   
     render(){
         console.log("***DrawChart***", this.props.yFromParent);
-       
+
+        axios({
+            method: 'post',
+            url: '/user/12345',
+            data: {
+              firstName: 'Fred',
+              lastName: 'Flintstone'
+            }
+          });
 
         return(
             <div className = 'chart'>
