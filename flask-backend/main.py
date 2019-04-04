@@ -4,6 +4,7 @@ import json
 
 
 app = Flask("__main__")
+app.config['SECRET_KEY'] = 'ASDJFAOWEFJ@)#@#)$()@#$()@#WOLDOFO'
 csrf = CSRFProtect(app)
 @csrf.error_handler
 def csrf_error(reason):
