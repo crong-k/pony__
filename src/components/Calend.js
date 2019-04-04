@@ -102,7 +102,7 @@ class DatePicker extends React.Component {
 				</div>
         <div className="chosen-date">
           {this.state.chosenDate}
-          <a onClick={this.resetDate} href="#">Today</a>
+          
         </div>
 			</div>
 		);

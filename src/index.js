@@ -10,10 +10,8 @@ import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 ReactDOM.render(<InfoButton />, document.getElementById('butt'));
+ReactDOM.render(<DatePicker/>,document.getElementById('calen'));
 ReactDOM.render(<ImageUploader />, document.getElementById('img'));
-ReactDOM.render(<DatePicker year={2017} month={3} day={17} />,
-	document.getElementById('calen')
-);
 
 // ReactDOM.render(<DrawChart />, document.getElementById('chart'));  //At index.html 
 
