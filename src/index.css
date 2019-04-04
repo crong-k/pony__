@@ -80,7 +80,8 @@ a {
 .datepicker-holder {
 	margin: 20px 0;
 	width: 212px;
-	text-align: center;
+  text-align: center;
+  float: right;
 }
 .datepicker-holder .prev {
   float: left;
@@ -98,7 +99,7 @@ a {
 	width: 212px;
 }
 .datepicker	.cell {
-  float: right;
+  float: left;
   border: 1px solid #000;
   height: 30px;
   width: 30px;
