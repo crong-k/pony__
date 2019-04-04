@@ -21,6 +21,6 @@ self.__precacheManifest = [
   },
   {
     "revision": "a33aeca54c5cc6a241038628f373b709",
-    "url": "/static/react/../../../../templates/index.html"
+    "url": "/static/react/../../templates/index.html"
   }
 ];

@@ -7,9 +7,9 @@
   "css/2.84aeacdb.chunk.css": "/static/react/css/2.84aeacdb.chunk.css",
   "js/2.11a112a6.chunk.js": "/static/react/js/2.11a112a6.chunk.js",
   "js/2.11a112a6.chunk.js.map": "/static/react/js/2.11a112a6.chunk.js.map",
-  "../../../../templates/index.html": "/static/react/../../../../templates/index.html",
+  "../../templates/index.html": "/static/react/../../templates/index.html",
   "css/2.84aeacdb.chunk.css.map": "/static/react/css/2.84aeacdb.chunk.css.map",
   "css/main.2400c52d.chunk.css.map": "/static/react/css/main.2400c52d.chunk.css.map",
-  "precache-manifest.c7c00c6fdd87edf3a22e3be447ffa4be.js": "/static/react/precache-manifest.c7c00c6fdd87edf3a22e3be447ffa4be.js",
+  "precache-manifest.e6c76cb6367be9e6d348cde0fa5b5bfd.js": "/static/react/precache-manifest.e6c76cb6367be9e6d348cde0fa5b5bfd.js",
   "service-worker.js": "/static/react/service-worker.js"
 }
