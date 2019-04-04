@@ -1,13 +1,19 @@
 from flask import Flask, request, render_template
+from flask_wtf.csrf import CSRFProtect
 import json
 
 
 app = Flask("__main__")
+csrf = CSRFProtect(app)
+@csrf.error_handler
+def csrf_error(reason):
+    print (reason)
+
 @app.route("/")
 def my_index() :
     return render_template("index.html", token="Hello Flask + React")
 
-@app.route("/user/12345", methods=['POST'])
+@app.route("/ajax_post", methods=['POST'])
 def ajax_post(request):
     json = request.get_json()  
     print (json)

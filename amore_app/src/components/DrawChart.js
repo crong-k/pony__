@@ -12,7 +12,7 @@ class DrawChart extends Component {
 
         axios({
             method: 'post',
-            url: '/user/12345',
+            url: '/ajax_post',
             data: {
               firstName: 'Fred',
               lastName: 'Flintstone'
