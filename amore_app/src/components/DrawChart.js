@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import { Polar } from 'react-chartjs-2';
+import axios;
 
 class DrawChart extends Component {   
    static defaultProps ={
