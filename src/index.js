@@ -3,13 +3,15 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import ImageUploader from './components/ImageUploader';
 import InfoButton from './components/InfoButton';
+import Calend from './components/Calend';
 import 'bootstrap/dist/css/bootstrap.css'
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(<App />, document.getElementById('root'));
-ReactDOM.render(<InfoButton />, document.getElementById('but'));
+ReactDOM.render(<InfoButton />, document.getElementById('butt'));
 ReactDOM.render(<ImageUploader />, document.getElementById('img'));
+ReactDOM.render(<Calend />, document.getElementById('calen'));
 
 // ReactDOM.render(<DrawChart />, document.getElementById('chart'));  //At index.html 
 
