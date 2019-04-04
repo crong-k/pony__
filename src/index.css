@@ -95,8 +95,7 @@ a {
 .datepicker {
 	border: 1px solid #000;
 	overflow: hidden;
-  width: 212px;
-  float: right;
+	width: 212px;
 }
 .datepicker	.cell {
   float: right;
