@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import ImageUploader from './components/ImageUploader';
 import InfoButton from './components/InfoButton';
-import DatePicker from './components/DatePicker';
+import DatePicker from './components/Calend';
 import 'bootstrap/dist/css/bootstrap.css'
 import './index.css';
 import * as serviceWorker from './serviceWorker';
