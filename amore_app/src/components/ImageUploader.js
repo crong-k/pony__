@@ -62,7 +62,7 @@ predictFromImage(imgData){
         console.log('check 4 - render')
         let {imagePreviewUrl} = this.state;
         let $imagePreview = null;
-        const noImageUrl = "/static/react/tea_model02/no-image.png";
+        const noImageUrl = "/static/react/no-image.png";
         let {predResult} = this.state;   //this.state;
         
         if (imagePreviewUrl){
