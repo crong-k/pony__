@@ -15,7 +15,9 @@ class DrawChart extends Component {
             url: '/ajax_post',
             data: {
               firstName: 'Fred',
-              lastName: 'Flintstone'
+              lastName: 'Flintstone',
+              result: this.props.yFromParent,
+              date: this.refs.chosen_date,
             }
           });
 

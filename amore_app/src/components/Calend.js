@@ -100,7 +100,7 @@ class DatePicker extends Component {
 				<div className="datepicker">
 					{cells}
 				</div>
-        <div className="chosen-date">
+        <div className="chosen-date" ref="chosen_date">
           {this.state.chosenDate}
          
         </div>
