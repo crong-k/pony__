@@ -34,41 +34,10 @@ code {
     monospace;
 }
 
-.imageInput {
-  border-bottom: 2px solid black;
-  border-right: 2px solid black;
-  border-top: 2px solid black;
-  border-left: 2px solid black;
-  padding: 13px;
-  margin: 15px;
-  cursor: pointer;
-  float : right ;
+
+* {
+  box-sizing: border-box;
 }
-
-.imgPreview {
-  text-align: center;
-  margin: 5px 15px !important;
-  height: 250px !important;
-  width: 250px !important;
-  border-left: 4px solid rgb(21, 61, 2) !important;
-  border-right: 4px solid rgb(21, 61, 2) !important;
-  border-top: 4px solid rgb(21, 61, 2) !important;
-  border-bottom: 4px solid rgb(21, 61, 2) !important;
-  float : left;
-}
-
-#input_img, #no_img {
-  text-align: center;
-  height: 256px !important;
-  width: 256px !important;
-  box-sizing: content-box !important;
-  border-left: 1px solid gray;
-  border-right: 1px solid gray;
-  border-top: 1px solid gray;
-  border-bottom: 1px solid gray;
-}
-
-
 a {
   color: black;
   text-decoration: none;
@@ -122,3 +91,41 @@ a {
 .chosen-date a {
   float: right;
 }
+
+
+
+
+.imageInput {
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  padding: 13px;
+  margin: 15px;
+  cursor: pointer;
+  float : right ;
+}
+
+.imgPreview {
+  text-align: center;
+  margin: 5px 15px !important;
+  height: 250px !important;
+  width: 250px !important;
+  border-left: 4px solid rgb(21, 61, 2) !important;
+  border-right: 4px solid rgb(21, 61, 2) !important;
+  border-top: 4px solid rgb(21, 61, 2) !important;
+  border-bottom: 4px solid rgb(21, 61, 2) !important;
+  float : left;
+}
+
+#input_img, #no_img {
+  text-align: center;
+  height: 256px !important;
+  width: 256px !important;
+  box-sizing: content-box !important;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+
