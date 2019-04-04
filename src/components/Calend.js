@@ -39,7 +39,7 @@ class DatePicker extends React.Component {
     day = day.toString().length < 2 ? '0' + day : day;
     month += 1;
     month = month.toString().length < 2 ? '0' + month : month;
-    let date = `${day}.${month}.${year}`;
+    let date = `${year}.${month}.${day}`;
     this.setState({chosenDate: date});
   }
   resetDate(e) {
@@ -102,7 +102,7 @@ class DatePicker extends React.Component {
 				</div>
         <div className="chosen-date">
           {this.state.chosenDate}
-        
+         
         </div>
 			</div>
 		);

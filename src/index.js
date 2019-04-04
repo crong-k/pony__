@@ -11,8 +11,7 @@ import * as serviceWorker from './serviceWorker';
 ReactDOM.render(<App />, document.getElementById('root'));
 ReactDOM.render(<InfoButton />, document.getElementById('butt'));
 ReactDOM.render(<DatePicker year={2019} month={4} day={10} />,
-	document.getElementById('calen')
-);
+	document.getElementById('calen'));
 ReactDOM.render(<ImageUploader />, document.getElementById('img'));
 
 
