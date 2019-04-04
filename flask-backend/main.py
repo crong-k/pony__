@@ -6,4 +6,4 @@ app = flask.Flask("__main__")
 def my_index() :
     return flask.render_template("index.html", token="Hello Flask + React")
 
-app.run(host='0.0.0.0:80')
+app.run(host='0.0.0.0',port='80')
