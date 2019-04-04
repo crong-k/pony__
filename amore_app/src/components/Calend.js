@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-class DatePicker extends React.Component {
+class DatePicker extends Component {
 	constructor(props) {
 		super(props);
 

@@ -39,7 +39,7 @@ class ImageUploader extends Component {
      
 predictFromImage(imgData){
     console.log('check 3')
-    const promise = tf.loadLayersModel('tea_model02/model.json');
+    const promise = tf.loadLayersModel('/static/react/tea_model02/model.json');
     promise.then((gt_model) => {
         const catEl = imgData;
         const img = tf.browser.fromPixels(catEl).toFloat();
@@ -62,7 +62,7 @@ predictFromImage(imgData){
         console.log('check 4 - render')
         let {imagePreviewUrl} = this.state;
         let $imagePreview = null;
-        const noImageUrl = "no-image.png";
+        const noImageUrl = "/static/react/tea_model02/no-image.png";
         let {predResult} = this.state;   //this.state;
         
         if (imagePreviewUrl){
