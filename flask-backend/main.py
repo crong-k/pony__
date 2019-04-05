@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, make_response
-from flask_wtf.csrf import CSRFProtect
+from flask_wtf.csrf import CsrfProtect
+
 import json
 
 app = Flask(__name__, static_folder="./static", template_folder="./templates")
@@ -10,8 +11,6 @@ app.config['SECRET_KEY'] = 'any secret string'
 @app.route("/")
 def index():
     return render_template("index.html")
-
-
 
 @app.route("/ajax_post", methods=['POST'])
 def ajax_post():
