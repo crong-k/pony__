@@ -27,9 +27,10 @@
       </div>
 
       <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
-      
+
       <script>
         $(document).ready(function(){
+            console.log(1111);
             $.ajax({
                 type: "POST",
                 url: "/ajax_post",
