@@ -7,7 +7,7 @@
     <meta name="theme-color" content="#000000" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />   
   
-    <meta name="author" content="Ahmedur Rahman Shovon">
+   
     
     <title>AMORE X SY</title>
     
@@ -27,31 +27,21 @@
         <div id="chart"></div>
       </div>
 
+
+      <div class="container">
+ 
+        <form class="form-signin" action="/signUp" method="post" role="form">
+            <h2 class="form-signin-heading">Please Sign Up </h2>
+            <input type="email" name="username" class="form-control" placeholder="Email address" required autofocus>
+            <input type="password" name="password" class="form-control" placeholder="Password" required>
+
+            <button class="btn btn-lg btn-primary btn-block" type="button">Register </button>
+        </form>
      
-      <script
-      src="https://code.jquery.com/jquery-1.12.4.min.js"
-      integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
-      crossorigin="anonymous"></script>
-    <script type="text/javascript">
-    $(document).ready(function () {
-        user_data = JSON.stringify({"username": "shovon"});
-        console.log(user_data);
-        $.ajax({
-            type: "POST",
-            url: "/HelloWorld",
-            data: user_data,
-            headers: {"Content-Type": "application/json"},
-            success: function(response)
-            {
-                $("#result").html(response);
-            },
-            error: function(response)
-            {
-                console.log(response);
-            }        
-        });
-    })
-    </script>
+    </div>
+
+
+     
 
       <div class="pageFooter"></div>
     </div>
