@@ -12,10 +12,9 @@ class DrawChart extends Component {
 
         axios({
             method: 'post',
-            url: '/ajax_post',
+            url: '/process',
             data: {
-              firstName: 'Sinyoung',
-              lastName: 'Kim',
+                keyword : 'hello sy!!',
               result: this.props.yFromParent,
               date: this.refs.chosen_date,
             }
