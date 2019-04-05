@@ -1,18 +1,16 @@
 from flask import Flask, render_template, request, make_response
-from flask_wtf.csrf import CsrfProtect
+from flask_wtf.csrf import CSRFProtect
 import json
 
 app = Flask(__name__, static_folder="./static", template_folder="./templates")
-csrf = CSRFProtect()
+csrf = CsrfProtect()
 csrf.init_app(app)
-
+app.config['SECRET_KEY'] = 'any secret string'
 
 @app.route("/")
 def index():
-    #csrf_token = "12344"
-    
     return render_template("index.html")
-    #return render_template("index.html", csrf_token=csrf_token)
+
 
 
 @app.route("/ajax_post", methods=['POST'])
