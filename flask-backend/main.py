@@ -8,15 +8,11 @@ csrf = CsrfProtect()
 csrf.init_app(app)
 app.config['SECRET_KEY'] = 'any secret string'
 
-@app.route("/")
-def hello():
-    return "Welcome to Python Flask!"
-
 @app.route('/index')
 def index():
     return render_template("index.html")
 
-from flask import render_template
+
 
     
 if __name__ == "__main__":
