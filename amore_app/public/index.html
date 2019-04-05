@@ -27,6 +27,7 @@
       </div>
 
       <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
+      
       <script>
         $(document).ready(function(){
             $.ajax({
@@ -34,7 +35,7 @@
                 url: "/ajax_post",
                 dataType: "json",
                 data: {
-                    keyword: "Hello, Amadeus!",
+                    keyword: "Hello, Sinyoung!",
                 },
                 success: function(data){
                     console.log(data);
