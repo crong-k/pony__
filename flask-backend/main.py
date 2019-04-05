@@ -16,7 +16,7 @@ app.config['SECRET_KEY'] = 'any secret string'
 def test():
     return render_template('index.html')
 
-@app.route('/get', methods=['GET'])
+@app.route('/post', methods=['POST'])
 def post():
     value = request.form['test']
     print(value)
