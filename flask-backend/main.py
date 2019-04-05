@@ -8,11 +8,10 @@ csrf = CsrfProtect()
 csrf.init_app(app)
 app.config['SECRET_KEY'] = 'any secret string'
 
+@app.route('/')
 @app.route('/index')
 def index():
     return render_template("index.html")
-
-
 
     
 if __name__ == "__main__":
