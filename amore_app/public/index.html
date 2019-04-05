@@ -32,18 +32,18 @@
       crossorigin="anonymous"></script>
 
 <script>
-  $().ready(function () {
-      console.log('ready');
-
-      $.ajax({
-          url: "{{ url_for('echo') }}",
-          method: "POST",
-          data: { param: "text"}
-      }).done(function(data, textStatus, jqXHR ) {
-          //console.log(data);
-          $('#results').val(data);
-      });
-  });
+  $(document).ready(function(){
+var clicked;
+$(".favorite").click(function(){
+clicked = $(this).attr("name");
+$.ajax({
+  type : 'POST',
+  url : "{{url_for('test')}}",
+  contentType: 'application/json;charset=UTF-8',
+  data : {'data':clicked}
+});
+ });
+});
 
 </script>
 
