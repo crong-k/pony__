@@ -19,6 +19,7 @@ def test():
 @app.route('/post', methods=['POST'])
 def post():
     value = request.form['test']
+    print(value)
     return value
     
 if __name__ == "__main__":
