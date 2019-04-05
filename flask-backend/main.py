@@ -1,16 +1,11 @@
 from flask import Flask, render_template, request, make_response
+from flask_wtf.csrf import CsrfProtect
 import json
-from extensions import csrf
 
-
-app = Flask(__name__)
-app.config.from_object('config.settings')
+app = Flask(__name__, static_folder="./static", template_folder="./templates")
+csrf = CsrfProtect()
 csrf.init_app(app)
-
-#app = Flask(__name__, static_folder="./static", template_folder="./templates")
-#csrf = CsrfProtect()
-#csrf.init_app(app)
-#app.config['SECRET_KEY'] = 'any secret string'
+app.config['SECRET_KEY'] = 'any secret string'
 
 #@app.route("/")
 #def index():
