@@ -12,16 +12,12 @@ app.config['SECRET_KEY'] = 'any secret string'
 def index():
     return render_template("index.html")
 
-@app.route("/process/", methods=['POST'])
-def process():
-    data = request.form['keyword']
-    print(data)
-    msg = "Flask got successfully ajax request!"
-    response = make_response(json.dumps(msg))
-    response.status_code = 200
-    response.headers['Access-Control-Allow-Origin'] = '*'
-    return response
-
+@csrf.exempt
+@app.route("/json_submit", methods=["POST"])
+def submit_handler():
+    # a = request.get_json(force=True)
+    app.logger.log("json_submit")
+    return {}
 
     
 if __name__ == "__main__":

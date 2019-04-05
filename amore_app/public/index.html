@@ -26,7 +26,32 @@
         <div id="chart"></div>
       </div>
 
-      <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
+      <meta name="csrf-token" content="{{ csrf_token() }}">
+      <script>
+      var csrftoken = $('meta[name=csrf-token]').attr('content')
+
+      $.ajaxSetup({
+          beforeSend: function(xhr, settings) {
+              if (!/^(GET|HEAD|OPTIONS|TRACE)$/i.test(settings.type)) {
+                  xhr.setRequestHeader("X-CSRFToken", csrftoken)
+              }
+          }
+      })
+
+      var request = $.ajax({
+   url: "/json_submit",
+   type: "POST",
+   contentType: "application/json",
+   data: JSON.stringify({
+     id: id, 
+     known: is_known
+   }),  
+})  
+  .done( function (request) {
+})
+    </script>
+
+
       <script>
         $(document).ready(function(){
             $.ajax({
