@@ -12,9 +12,6 @@ app.config['SECRET_KEY'] = 'any secret string'
 #    return render_template('index.html')
 
 @app.route('/')
-def hello_world():
-    return 'Hello World!'
-
 @app.route('/test')
 def test():
     return render_template('index.html')
