@@ -1,25 +1,23 @@
-from flask import Flask, request, render_template
-from flask_wtf.csrf import CSRFProtect
+from flask import Flask, render_template, request, make_response
+from flask_wtf.csrf import CsrfProtect
 import json
 
-
-app = Flask("__main__")
-app.config['SECRET_KEY'] = 'ASDJFAOWEFJ@)#@#)$()@#$()@#WOLDOFO'
-csrf = CSRFProtect(app)
-@csrf.error_handler
-def csrf_error(reason):
-    print (reason)
+app = Flask(__name__, static_folder="./static", template_folder="./templates")
 
 @app.route("/")
-def my_index() :
-    return render_template("index.html", token="Hello Flask + React")
+def index():
+    return render_template("index.html")
 
 @app.route("/ajax_post", methods=['POST'])
-def ajax_post(request):
-    json = request.get_json()  
-    print (json)
-
+def ajax_post():
+    data = request.form['keyword']
+    print(data)
+    msg = "Flask got successfully ajax request!"
+    response = make_response(json.dumps(msg))
+    response.status_code = 200
+    response.headers['Access-Control-Allow-Origin'] = '*'
+    return response
 
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0')
+    app.run(host='0.0.0.0',debug=True)

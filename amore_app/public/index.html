@@ -5,9 +5,11 @@
     <link rel="group icon" href="%PUBLIC_URL%/AMOREPACIFIC.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
     <meta name="theme-color" content="#000000" />
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />    
-    <title>AMORE X SY</title>
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />   
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
     <script>window.token = "{{ token }}"</script>
+    <title>AMORE X SY</title>
+    
   <body>
     <div class="container">       
       <div class="pageHeader">
@@ -26,16 +28,21 @@
 
       <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
       <script>
-        var csrftoken = $('meta[name=csrf_token]').attr('value');
-        function csrfSafeMethod(method){
-            return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
-        }
-        $.ajaxSetup({
-            beforeSend: function(xhr, settings){
-                if (!csrfSafeMethod(settings.type) && !this.crossDomain){
-                    xhr.setRequestHeader("X-CSRFToken", csrftoken);
+        $(document).ready(function(){
+            $.ajax({
+                type: "POST",
+                url: "/ajax_post",
+                dataType: "json",
+                data: {
+                    keyword: "Hello, Amadeus!",
+                },
+                success: function(data){
+                    console.log(data);
+                },
+                error: function(jqXHR){
+                    console.log(jqXHR);
                 }
-            }
+            })
         });
     </script>
 
