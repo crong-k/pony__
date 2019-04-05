@@ -12,14 +12,12 @@ app.config['SECRET_KEY'] = 'any secret string'
 def index():
     return render_template("index.html")
 
-@app.route("/process/", methods=['POST'])
-def process():
-    data = request.form.get('keyword')
-    print(data)
-    #msg = "Flask got successfully ajax request!"
-    #response = make_response(json.dumps(msg))
-    #response.status_code = 200
-    #response.headers['Access-Control-Allow-Origin'] = '*'
-    #return response
+@app.route('/test', methods=['GET', 'POST'])
+def test():
+    vars = request.data
+    return ', '.join([str(i) for i in vars])
+
+
+
 if __name__ == "__main__":
     app.run(host='0.0.0.0',debug=True)
