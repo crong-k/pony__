@@ -8,17 +8,19 @@ csrf = CsrfProtect()
 csrf.init_app(app)
 app.config['SECRET_KEY'] = 'any secret string'
 
-@app.route("/")
+@app.route('/')
+@app.route('/index')
 def index():
     return render_template("index.html")
 
-@csrf.exempt
-@app.route("/json_submit", methods=["POST"])
-def submit_handler():
-    # a = request.get_json(force=True)
-    app.logger.log("json_submit")
-    return {}
-
+@app.route('/HelloWorld', methods=['GET', 'POST'])
+def HelloWorldRouted():
+    if request.method == "POST":
+        try:
+            username = str(request.json['username'])
+            return "Hello "+username+"!"
+        except Exception as e:
+            return "error: "+str(e)
     
 if __name__ == "__main__":
     app.run(host='0.0.0.0',debug=True)

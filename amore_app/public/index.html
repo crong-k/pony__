@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
     <meta name="theme-color" content="#000000" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />   
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
-    <script>window.token = "{{ token }}"</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Ahmedur Rahman Shovon">
+    
     <title>AMORE X SY</title>
     
   <body>
@@ -26,51 +27,30 @@
         <div id="chart"></div>
       </div>
 
-      <meta name="csrf-token" content="{{ csrf_token() }}">
-      <script>
-      var csrftoken = $('meta[name=csrf-token]').attr('content')
-
-      $.ajaxSetup({
-          beforeSend: function(xhr, settings) {
-              if (!/^(GET|HEAD|OPTIONS|TRACE)$/i.test(settings.type)) {
-                  xhr.setRequestHeader("X-CSRFToken", csrftoken)
-              }
-          }
-      })
-
-      var request = $.ajax({
-   url: "/json_submit",
-   type: "POST",
-   contentType: "application/json",
-   data: JSON.stringify({
-     id: 'ddddd', 
-     known:'ddddddd'
-   }),  
-})  
-  .done( function (request) {
-})
-    </script>
-
-
-      <script>
-        $(document).ready(function(){
-            $.ajax({
-                type: "POST",
-                cache: false,
-                url: qurl,
-                dataType: "json",
-                data: {
-                  keyword : 'hello sy!!',
-            
-                },
-                success: function(data){
-                    console.log(data);
-                },
-                error: function(jqXHR){
-                    console.log(jqXHR);
-                }
-            })
+     
+      <script
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+      crossorigin="anonymous"></script>
+    <script type="text/javascript">
+    $(document).ready(function () {
+        user_data = JSON.stringify({"username": "shovon"});
+        console.log(user_data);
+        $.ajax({
+            type: "POST",
+            url: "/HelloWorld",
+            data: user_data,
+            headers: {"Content-Type": "application/json"},
+            success: function(response)
+            {
+                $("#result").html(response);
+            },
+            error: function(response)
+            {
+                console.log(response);
+            }        
         });
+    })
     </script>
 
       <div class="pageFooter"></div>
