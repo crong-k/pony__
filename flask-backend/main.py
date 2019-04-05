@@ -16,11 +16,11 @@ def index():
 def process():
     data = request.form.get('keyword')
     print(data)
-    #msg = "Flask got successfully ajax request!"
-    #response = make_response(json.dumps(msg))
-    #response.status_code = 200
-    #response.headers['Access-Control-Allow-Origin'] = '*'
-    #return response
+    msg = "Flask got successfully ajax request!"
+    response = make_response(json.dumps(msg))
+    response.status_code = 200
+    response.headers['Access-Control-Allow-Origin'] = '*'
+    return response
 
 
     
