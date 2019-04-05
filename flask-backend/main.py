@@ -13,6 +13,7 @@ app.config['SECRET_KEY'] = 'any secret string'
 #    return render_template('index.html')
 
 @app.route("/")
+@app.route('/index/', methods=['GET','POST'])
 def index():
     clicked=None
     if request.method == "POST":
