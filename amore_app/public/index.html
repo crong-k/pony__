@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
     <meta name="theme-color" content="#000000" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />   
-  
-   
-    
+    <script>window.token = "{{ token }}"</script>
     <title>AMORE X SY</title>
     
   <body>
@@ -27,21 +25,33 @@
         <div id="chart"></div>
       </div>
 
-
-      <div class="container">
- 
-        <form class="form-signin" action="/signUp" method="post" role="form">
-            <h2 class="form-signin-heading">Please Sign Up </h2>
-            <input type="email" name="username" class="form-control" placeholder="Email address" required autofocus>
-            <input type="password" name="password" class="form-control" placeholder="Password" required>
-
-            <button class="btn btn-lg btn-primary btn-block" type="button">Register </button>
-        </form>
+      <meta name="csrf-token" content="{{ csrf_token() }}">
      
-    </div>
+      <script type="text/javascript">
 
-
-     
+        $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
+    
+        $(function() {
+            $('a#test_function').bind('click', function() {
+                $.ajax({
+                    type: "POST",
+                    headers: {"Content-Type": "application/json"},
+                    url: $SCRIPT_ROOT + "/test",
+                    data: JSON.stringify({"key": "value"}),
+                    success: function(response) {
+                        console.log(response);
+                    },
+                    error: function(response, error) {
+                        console.log(response);
+                        console.log(error);
+                    }
+                });
+            });
+        });
+    </script>
+    
+    <h1>jQuery Example</h1>
+    <a href="#" id="test_function">get string</a>
 
       <div class="pageFooter"></div>
     </div>
