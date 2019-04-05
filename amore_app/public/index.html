@@ -31,7 +31,8 @@
         $(document).ready(function(){
             $.ajax({
                 type: "POST",
-                url: "/process",
+                cache: false,
+                url: qurl,
                 dataType: "json",
                 data: {
                   keyword : 'hello sy!!',

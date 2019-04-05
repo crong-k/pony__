@@ -14,7 +14,7 @@ def index():
 
 @app.route("/process/", methods=['POST'])
 def process():
-    data = request.form.get('keyword')
+    data = request.form['keyword']
     print(data)
     msg = "Flask got successfully ajax request!"
     response = make_response(json.dumps(msg))
