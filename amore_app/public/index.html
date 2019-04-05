@@ -27,15 +27,14 @@
       </div>
 
       <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
-      
       <script>
         $(document).ready(function(){
             $.ajax({
                 type: "POST",
-                url: "/ajax_post",
+                url: "/process",
                 dataType: "json",
                 data: {
-                    keyword: "Hello, Sinyoung!",
+                    keyword: "Hello, ssssss!",
                 },
                 success: function(data){
                     console.log(data);
