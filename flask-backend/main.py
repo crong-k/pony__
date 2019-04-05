@@ -8,15 +8,17 @@ csrf = CsrfProtect()
 csrf.init_app(app)
 app.config['SECRET_KEY'] = 'any secret string'
 
-@app.route('/')
-@app.route('/index')
+@app.route("/")
 def index():
-    return render_template("index.html")
+    return render_template('index.html')
 
-@app.route('/test', methods=['GET', 'POST'])
-def test():
-    vars = request.data
-    return ', '.join([str(i) for i in vars])
+@app.route("/echo", methods=["POST"])
+def echo():
+    print('echo called')
+    data = request.values.get('param', '')
+    print(data)
+    return data
+
     
 if __name__ == "__main__":
     app.run(host='0.0.0.0',debug=True)
