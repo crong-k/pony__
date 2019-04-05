@@ -2,12 +2,10 @@ from flask import Flask, render_template, request, make_response
 import json
 from extensions import csrf
 
-def create_app():
-    app = Flask(__name__)
 
-    app.config.from_object('config.settings')
-
-    csrf.init_app(app)
+app = Flask(__name__)
+app.config.from_object('config.settings')
+csrf.init_app(app)
 
 #app = Flask(__name__, static_folder="./static", template_folder="./templates")
 #csrf = CsrfProtect()
