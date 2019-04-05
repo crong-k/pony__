@@ -38,7 +38,7 @@ $(".favorite").click(function(){
 clicked = $(this).attr("name");
 $.ajax({
   type : 'POST',
-  url : "{{url_for('test')}}",
+  url : "{{url_for('index')}}",
   contentType: 'application/json;charset=UTF-8',
   data : {'data':clicked}
 });
