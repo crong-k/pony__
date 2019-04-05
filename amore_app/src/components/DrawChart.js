@@ -10,15 +10,6 @@ class DrawChart extends Component {
     render(){
         console.log("***DrawChart***", this.props.yFromParent);
 
-        axios({
-            method: 'post',
-            url: '/process',
-            data: {
-                keyword : 'hello sy!!',
-              result: this.props.yFromParent,
-              date: this.refs.chosen_date,
-            }
-          });
 
         return(
             <div className = 'chart'>
