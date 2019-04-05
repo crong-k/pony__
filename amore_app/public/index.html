@@ -31,21 +31,10 @@
       integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
       crossorigin="anonymous"></script>
 
-<script>
-  $(document).ready(function(){
-var clicked;
-$(".favorite").click(function(){
-clicked = $(this).attr("name");
-$.ajax({
-  type : 'POST',
-  url : "{{url_for('index')}}",
-  contentType: 'application/json;charset=UTF-8',
-  data : {'data':clicked}
-});
- });
-});
-
-</script>
+      <form action="/post" method="post">
+        <p>TESTTEST : <input type="text" name="test"></p>
+        <input type="submit" value="PASS INFO">
+    </form>
 
       
    

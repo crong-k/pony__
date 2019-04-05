@@ -1,6 +1,5 @@
 from flask import Flask, render_template, request, make_response
 from flask_wtf.csrf import CsrfProtect
-
 import json
 
 app = Flask(__name__, static_folder="./static", template_folder="./templates")
@@ -12,14 +11,18 @@ app.config['SECRET_KEY'] = 'any secret string'
 #def index():
 #    return render_template('index.html')
 
-@app.route("/")
-@app.route('/index/', methods=['GET','POST'])
-def index():
-    clicked=None
-    if request.method == "POST":
-        clicked=request.json['data']
+@app.route('/')
+def hello_world():
+    return 'Hello World!'
+
+@app.route('/test')
+def test():
     return render_template('index.html')
 
+@app.route('/post', methods=['POST'])
+def post():
+    value = request.form['test']
+    return value
     
 if __name__ == "__main__":
     app.run(host='0.0.0.0',debug=True)
