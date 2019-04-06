@@ -9,7 +9,6 @@ class ImageUploader extends Component {
             image: '', 
             imagePreviewUrl: '',
             imgData: '',
-            predResult: [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1], //for connect 
         };
     }
     handleImageChange(e) {
@@ -33,7 +32,7 @@ class ImageUploader extends Component {
         });
         console.log('img_info',imgData)
         
-        return imgData    }   
+        return imgData}   
   
      
     render(){
@@ -55,11 +54,9 @@ class ImageUploader extends Component {
                 <input className="imageInput" type="file" onChange={(e)=> {this.handleImageChange(e); 
                  this.getImageData();}}/>
             <div>
-                {$imagePreview}
-               
+                {$imagePreview}               
                 <PredModel InputImage={imgData}/>   
             </div>
-            <div></div>
         </div>
     );
 }

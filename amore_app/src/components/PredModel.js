@@ -3,14 +3,10 @@ import * as tf from '@tensorflow/tfjs';
 import DrawChart from './DrawChart';
 
 class PredModel extends Component {
-    constructor(props){
-        super(props);
-        this.state={
-            InputImage: '',
-            predResult: [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1], //for connect 
-        };
-    }
-    
+    static defaultProps ={
+        predResult: [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],
+        InputImage: ''
+      }  
     render(){
 
         const promise = tf.loadLayersModel('tea_model02/model.json');
