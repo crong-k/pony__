@@ -27,21 +27,21 @@ class ImageUploader extends Component {
 
     getImageData() {
         let imgData = this.refs.noData;
-        console.log('check 2')
-        //this.predictFromImage(imgData);
+        console.log('check 2');
         this.setState({
-            imgData: this.refs.noData,  
+            imgData: this.refs.noData,   
         });
+        console.log('img_info',imgData)
+        
         return imgData    }   
   
- 
-
+     
     render(){
         console.log('check 4 - render')
         let {imagePreviewUrl} = this.state;
         let $imagePreview = null;
-        const noImageUrl = "/static/react/no-image.png";
-        let {imgData} = this.state;   //this.state;
+        const noImageUrl = "no-image.png";
+        let {imgData} = this.state;   
         
         if (imagePreviewUrl){
             $imagePreview = (<img id="input_img" ref="noData" src={imagePreviewUrl} />);
@@ -56,9 +56,8 @@ class ImageUploader extends Component {
                  this.getImageData();}}/>
             <div>
                 {$imagePreview}
-              
-                <PredModel imgData={imgData}/>   
-                
+               
+                <PredModel InputImage={imgData}/>   
             </div>
             <div></div>
         </div>
