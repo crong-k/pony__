@@ -34,13 +34,14 @@ class ImageUploader extends Component {
         });
         return imgData    }   
   
+ 
 
     render(){
         console.log('check 4 - render')
         let {imagePreviewUrl} = this.state;
         let $imagePreview = null;
         const noImageUrl = "/static/react/no-image.png";
-        let {predResult} = this.state;   //this.state;
+        let {imgData} = this.state;   //this.state;
         
         if (imagePreviewUrl){
             $imagePreview = (<img id="input_img" ref="noData" src={imagePreviewUrl} />);
