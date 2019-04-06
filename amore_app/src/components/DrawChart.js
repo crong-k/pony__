@@ -1,15 +1,14 @@
 import React, {Component} from 'react';
 import { Polar } from 'react-chartjs-2';
 
-
 class DrawChart extends Component {   
    static defaultProps ={
           yFromParent : [5, 10, 10, 10, 5, 10, 10, 5, 10, 10,10, 10, 10, 10, 10]
         }  
   
     render(){
-        console.log("***DrawChart***", this.props.yFromParent);
-
+        console.log("***", this.props.yFromParent);
+       
 
         return(
             <div className = 'chart'>
