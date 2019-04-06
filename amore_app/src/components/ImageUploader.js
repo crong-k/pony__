@@ -34,9 +34,7 @@ class ImageUploader extends Component {
         });
         return imgData    }   
   
-     
 
-}
     render(){
         console.log('check 4 - render')
         let {imagePreviewUrl} = this.state;
